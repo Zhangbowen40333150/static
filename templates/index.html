@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>X-man</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+  rel="stylesheet" />
+        	<link rel="stylesheet" type="text/css" href="{{ url_for('static',
+  filename='style/style.css') }}" />
+</head>
+<body style="padding-top: 50px">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand"><img src="#" styl="width: 150px; height: 50px; padding: 0 0 20px 0; margin: 10px">
+		
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+		<ul class="nav navbar-nav navbar-left">
+			<li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+			<li><a href="/rolers"><span class="glyphicon glyphicon-user"></span> Rolers</a></li>
+			<li><a href="/picture"><span class="glyphicon glyphicon-picture"></span> Picture</a></li>
+			<li><a href="/introduction"><span class="glyphicon glyphicon-list-alt"></span> Introduction</a></li>
+		</ul>
+                 <ul class="nav navbar-nav navbar-right">
+			<li><a href="/login"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+                          {% if username %}
+                              <li><a herf="#"><span>Welcome {{ username }}</span></a></li>
+                                                 {% endif %}
+		</ul>
+
+		</div>
+	</div>
+</nav>
+{% block content %}
+<div id="myCarousel" class="carousel slide">
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner" align="center">
+		
+		<div class="item active">
+			<img src="static/img/page.jpg" width="1640px" height="640px" alt="slide2">
+		</div>
+
+		<div class="item">
+			<img src="static/img/slide1.jpg" width="1680px" height="640px" alt="slide1">
+		</div>
+		
+		<div class="item">
+			<img src="static/img/slide3.jpg" width="2080px" height="640px" alt="slide3">
+		</div>
+		
+		<div class="tab">
+			<a href="#myCarousel" data-slide="prev" class="carousel-control left">
+				<span class="glyphicon glyphicon-chevron-left"></span>	
+			</a>
+			
+			<a href="#myCarousel" data-slide="next" class="carousel-control right">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+	</div>
+</div>
+
+	<div class="tab1">
+		<div class="container">
+			<h2 class="tab-h2">There are some introducition about X-man movies</h2>
+			<div class="row">
+				<div class="col-md-6 col">
+					<div class="media-left">
+						<a href="#" class="img1"><img src="static/img/l1.jpg" height="150px" width="150px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">X-man first class</h4>
+						<p class="text-muted"> X-Men: First Class) is an American superhero movie released in 2011,
+							based on the Marvel comic "X-Men". The film is the fifth in a series of X-Men movies,
+							directed by Matthew Vann, produced by Brian Singer and others. The background of the film
+							was mainly set during the Cuban Missile Crisis of 1962. The plot focused on the relationship
+							between Professor Charles Zelwig and Eric Lancher/Magic, and the team led by the two - The
+							origin of the X-Men and the Mutant Alliance. The film's starring includes James McAvoy,
+							Michael Fassbunda, Rose Byrne, Jennie Jones, Oliver Pratt and Kevin Becken.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col">
+					<div class="media-left">
+						<a href="#" class="img1"><img src="static/img/l2.jpg" height="150px" width="150px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">X-man2</h4>
+						<p class="text-muted">The story takes place in a not-too-distant future. The X-Men encounters
+							the biggest crisis of survival in history. They must go back to the past to save their own
+							destiny. The X-Men may be the most advanced genetic organism in our time, but in the near
+							future, they are all new special combat robots manufactured and directed by the founder of
+							Trask Industries, Bolivar Trask. The "sentinel" is hunting and is in danger of being
+							extinct.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col">
+					<div class="media-left">
+						<a href="#" class="img1"><img src="static/img/l3.jpg" height="150px" width="150px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">The last stand</h4>
+						<p class="text-muted"> The film tells about a new treatment method. The X-Men are faced with
+							two choices: one is to continue to maintain their "variant genes", although they are
+							isolated by humans but have extraordinary ability, and the second is to give up superpowers
+							and return to ordinary people. .</p>
+					</div>
+				</div>
+				<div class="col-md-6 col">
+					<div class="media-left">
+						<a href="#" class="img1"><img src="static/img/l4.jpg" height="150px" width="150px"></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">The Wolverine </h4>
+						<p class="text-muted">
+Wolverine's original name was James Hollett, born in a wealthy family in Canada at the end of the 19th century.
+							He was born to be weak but his bones were strange, and his family was not harmonious,
+							so James was introverted and lonely. He has been living in such a calm and boring manner
+							until one night, when the gardener Rogan killed his father, the pain of his father’s death
+							made Little James inspire the strange ability of the body. He grew up from the body. Bone
+							claws, Little James killed Rogan with "bone claws." However, what I didn't expect was that
+							Rogan was the father of James. The father told him about his life before he died.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="tab2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h3> Days of Future Past</h3>
+				<p>
+				The setting of the story took place in the moment, and the mutant community was hit by an unprecedented
+					devastating blow, and the root of all this was the “magic woman” Raven (Jennifer Lawrence) who
+					assassinated Bolivar in 1973. Lasker (Peter Dinklage). After learning that "Phantom Cat"
+					(Alan Peggy Ellen Page) used the ability to travel through time and space to help Blink
+					(Fan Bingbing) and other comrades escape the giant robot "sentinel", Professor X (Patrick Stewart
+					Patrick Stewart) Qualified) and Wan Wang (Ian McKellen) agreed to let Wolverine (Hugh Jackman)
+					travel back to 1973 to find the young Professor X (James McAvoy) And) the young King of Magnetics
+					(Michael Fassbender) and persuaded them to stop the action of the magical woman. As a result,
+					Wolverine embarked on a journey back to the past, but the fate will not reverse, no one knows.</p>
+			</div>
+			<div class="col-md-6">
+				<img src="static/img/l5.jpg" class="img-responsive center-block" width="50%" height="50%">
+			</div>			
+		</div>
+	</div>
+</div>
+
+<div class="tab3">
+	<div class="container">
+		<div class="row">			
+			<div class="col-md-6">
+				<img src="static/img/l6.jpg" class="img-responsive center-block" width="50%" height="50%">
+			</div>
+			<div class="col-md-6">
+				<h3>X-Men: Apocalypse (2016)</h3>
+				<p>The story of the X-Men Tianqi story is about 1980. It tells the story of the ancient powerful mutant
+					Apocalypse to clean up the human society and rule the new world. The magic-shaped woman will become
+					the leader of the young mutants and defeat the enemy with the help of Professor X.
+					Born in Egypt's first dynasty, Apocalypse was abandoned. He was adopted by a group of rogues in the
+					desert. He was educated in the theory of "survival of the fittest" and grew up in a brutal battle.
+					The leader of the adoption of Apocalypse seems to have heard of something. It is predicted that this
+					kid will become the ruler. At that time, the Egyptian pharaoh was actually from the 30th century
+					traverse Kang. He also knew the potential of the Apocalypse and intended to control him, but he was
+					forced to leave without success..</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<footer id="footer">
+	<div class="container">
+		<a herf="#">302654447@qq.com</a>
+		<p>13973007688</p>
+	</div>
+</footer>
+
+
+{% endblock %}
+
+
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

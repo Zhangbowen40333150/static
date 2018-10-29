@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rolers</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+  rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',
+  filename='style/style.css') }}" />
+
+</head>
+<body style="padding-top: 50px">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+		<ul class="nav navbar-nav navbar-left">
+			<li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li><a href="/rolers"><span class="glyphicon glyphicon-user"></span> Rolers</a></li>
+            <li><a href="/picture"><span class="glyphicon glyphicon-picture"></span> Picture</a></li>
+            <li><a href="/introduction"><span class="glyphicon glyphicon-list-alt"></span> Introduction</a></li>
+		</ul>
+		</div>
+	</div>
+</nav>
+
+<div>
+	
+		<img src="static/img/page.jpg" style="height: 100%; width: 100%">
+	
+</div>
+	
+<div id="vedio">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-8">
+    			<div class="container-fluid"> 				
+    				<div class="row vedio-info">
+    					<div class="col-md-5">
+    						<video src="static/video/fight.mp4" controls style="height: 180px; width: 300px; margin: 10px 0 4px 0" poster="static/img/u.jpg"></video>		
+    					</div>
+    					<div class="col-md-7">
+    						<h4>Music</h4>
+    						<p>
+                                one of music
+                            </p>
+    						
+    					</div>
+    				</div>
+    				<div class="row vedio-info">
+    					<div class="col-md-5">
+    						<video src="static/video/payphone.mp4" controls style="height: 180px; width: 300px; margin: 10px 0 4px 0" poster="static/img/u.jpg"></video>		
+    					</div>
+    					<div class="col-md-7">
+    						<h4>music</h4>
+    						<p>another BGM</p>
+    						
+    					</div>
+    				</div>
+    				<div class="row vedio-info">
+    					<div class="col-md-5">
+    						<video src="static/video/John Mayer.mp4" controls style="height: 180px; width: 300px; margin: 10px 0 4px 0" poster="static/img/u.jpg"></video>			
+    					</div>
+    					<div class="col-md-7">
+    						<h4>music</h4>
+    						<p>listen for another music</p>
+    						
+    					</div>
+    				</div>
+                    <div class="row vedio-info">
+                        <div class="col-md-5">
+                            <video src="static/video/video4.mp4" controls style="height: 180px; width: 300px; margin: 10px 0 4px 0" poster="static/img/u.jpg"></video>            
+                        </div>
+                        <div class="col-md-7">
+                            <h4>listen</h4>
+                            <p>
+                                listen for music
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="row vedio-info">
+                        <div class="col-md-5">
+                            <video src="static/video/John Mayer.mp4" controls style="height: 180px; width: 300px; margin: 10px 0 4px 0" poster="static/img/u.jpg"></video>            
+                        </div>
+                        <div class="col-md-7">
+                            <h4>listen</h4>
+                            <p>JKDD</p>
+                            
+                        </div>
+                    </div>
+    			</div>
+    		</div>
+    		<div class="col-md-4 info-right">
+    			<blockquote>
+    				<h2>7 Rolers of X-man</h2>
+    			</blockquote>
+    			<div class="container-fluid">
+    				<div class="row" style="border-bottom: 1px solid #eee; padding: 20px 0 20px 0">
+    					<div class="col-md-5" style="margin: 0;">
+    						<img src="static/img/zby.png" class="img-responsive">
+    					</div>
+    					<div class="col-md-7">
+    						<a href="/rolers/Hugh/" style="font-size: 20px; margin: : 30px 20px 0 0">1.Hugh Jackman</a>
+                            <p>
+                            Hugh Jackman, born on October 12, 1968 in Sydney, Australia, is an Australian film actor.
+                            </p>   						
+    					</div>
+                    </div>
+                    <div class="row" style="border-bottom: 1px solid #eee; padding: 20px 0 20px 0">
+                        <div class="col-md-5" style="margin: 0;">
+                            <img src="static/img/zby.png" class="img-responsive">          
+                        </div>
+                        <div class="col-md-7">
+                            <a href="/rolers/lan" style="font-size: 20px; margin: : 30px 20px 0 0">2.Magneto</a>
+                            <p>Sir Ian McLaren, CH, CBE is a British actor and is regarded as one
+                                of the most outstanding actors in the UK.
+                            </p>                        
+                        </div>
+                    </div>
+    				<div class="row" style="border-bottom: 1px solid #eee; padding: 20px 0 20px 0">
+                        <div class="col-md-5" style="margin: 0;">
+                            <img src="static/img/zby.png" class="img-responsive">          
+                        </div>
+                        <div class="col-md-7">
+                            <a href="/rolers/Rouge/" style="font-size: 20px; margin: : 30px 20px 0 0">3. Anna</a>
+                            <p>
+                                Anna Paquin, a New Zealand actress, won the Oscar for Best Supporting Actress
+                                in 1994 for her performance in Piano Love.
+                            </p>                        
+                        </div>
+                    </div>
+                    <div class="row" style="border-bottom: 1px solid #eee; padding: 20px 0 20px 0">
+                        <div class="col-md-5" style="margin: 0;">
+                            <img src="static/img/zby.png" class="img-responsive">          
+                        </div>
+                        <div class="col-md-7">
+                            <a href="/rolers/Storm/" style="font-size: 20px; margin: : 30px 20px 0 0">4. Halle Maria Berry</a>
+                            <p>
+                               Halle Berry, born in 1966 in Cleveland, Ohio, is an American film and television actor.
+                            </p>                        
+                        </div>
+                    </div>
+                    <div class="row" style="border-bottom: 1px solid #eee; padding: 20px 0 20px 0">
+                        <div class="col-md-5" style="margin: 0;">
+                            <img src="static/img/zby.png" class="img-responsive">          
+                        </div>
+                        <div class="col-md-7">
+                            <a href="/rolers/Toad/" style="font-size: 20px; margin: : 30px 20px 0 0">5. Ray Park</a>
+                            <p>
+                                Raymond Park, born on August 23, 1974 in Glasgow, Scotland, UK, is an actor and
+                                martial artist.
+                            </p>                        
+                        </div>
+                    </div>
+
+
+                    </div>
+    			</div>
+    		</div>
+    	</div>
+    </div>   	    	   	
+</div>
+
+<footer id="footer">
+	<div class="container">
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+</body>
+</html>
